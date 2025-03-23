@@ -1,10 +1,13 @@
-[gd_scene format=3 uid="uid://b6eyykhjwlxtx"]
+[gd_scene load_steps=2 format=3 uid="uid://b6eyykhjwlxtx"]
+
+[ext_resource type="Script" uid="uid://pc6n1d801n2n" path="res://scripts/game_manager.gd" id="1_o5qli"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
 
 [node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_o5qli")
 
 [node name="TerrainGenerator" type="Node2D" parent="."]
 
