@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cjh3xw41tolss"]
+
+[node name="PowerMeter" type="Node2D"]

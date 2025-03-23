@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://b4s8phvr71sa5"]
+
+[node name="AngleControl" type="Node2D"]

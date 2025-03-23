@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dwex185gp635c"]
+
+[node name="TurnIndicator" type="Node2D"]

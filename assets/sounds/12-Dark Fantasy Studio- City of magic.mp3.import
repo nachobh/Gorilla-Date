@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3kgj8ivn0b7l"
+path="res://.godot/imported/12-Dark Fantasy Studio- City of magic.mp3-2c27905a1cd4d769795871ef0ce5a373.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/12-Dark Fantasy Studio- City of magic.mp3"
+dest_files=["res://.godot/imported/12-Dark Fantasy Studio- City of magic.mp3-2c27905a1cd4d769795871ef0ce5a373.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
