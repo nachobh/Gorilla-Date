@@ -15,6 +15,41 @@ run/main_scene="uid://b6eyykhjwlxtx"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[input]
+
+angle_up={
+"deadzone": 0.2,
+"events": []
+}
+angle_down={
+"deadzone": 0.2,
+"events": []
+}
+power_up={
+"deadzone": 0.2,
+"events": []
+}
+power_down={
+"deadzone": 0.2,
+"events": []
+}
+launch={
+"deadzone": 0.2,
+"events": []
+}
+next_emoji={
+"deadzone": 0.2,
+"events": []
+}
+prev_emoji={
+"deadzone": 0.2,
+"events": []
+}
+reset_game={
+"deadzone": 0.2,
+"events": []
+}
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

@@ -1,34 +1,71 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6eyykhjwlxtx"]
+[gd_scene load_steps=12 format=3 uid="uid://b6eyykhjwlxtx"]
 
+[ext_resource type="Script" uid="uid://cyi47dmp4yqvj" path="res://scripts/input_map.gd" id="1_choun"]
 [ext_resource type="Script" uid="uid://pc6n1d801n2n" path="res://scripts/game_manager.gd" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://m6c6buo5xd2o" path="res://scripts/main.gd" id="1_ya4ey"]
+[ext_resource type="Script" uid="uid://dmkvcnxuyrhiv" path="res://scripts/player.gd" id="2_0wfyh"]
+[ext_resource type="Script" uid="uid://cw757cin3kcdf" path="res://scripts/terrain_generator.gd" id="2_sugp2"]
+[ext_resource type="Script" uid="uid://d08plvb0tcxce" path="res://scripts/obstacle.gd" id="3_jyhfs"]
+[ext_resource type="Script" uid="uid://cwlxpak2aqhyh" path="res://scripts/projectile_manager.gd" id="5_tbgi4"]
+[ext_resource type="Script" uid="uid://c88rpq6w7i80b" path="res://scripts/ui/turn_indicator.gd" id="6_tefeu"]
+[ext_resource type="Script" uid="uid://bbairhifom8up" path="res://scripts/ui/angle_control.gd" id="7_o6xl0"]
+[ext_resource type="Script" uid="uid://dnd0knfufjea" path="res://scripts/ui/power_meter.gd" id="8_tipki"]
+[ext_resource type="Script" uid="uid://crsl64sqxqw0v" path="res://scripts/ui/emoji_selector.gd" id="9_85g3d"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_ya4ey")
 
 [node name="Background" type="Sprite2D" parent="."]
+script = ExtResource("1_choun")
 
 [node name="GameManager" type="Node" parent="."]
 script = ExtResource("1_o5qli")
 
 [node name="TerrainGenerator" type="Node2D" parent="."]
+script = ExtResource("2_sugp2")
 
 [node name="Path" type="Node2D" parent="."]
 
 [node name="Obstacles" type="StaticBody2D" parent="Path"]
+script = ExtResource("3_jyhfs")
 
 [node name="Player1" type="CharacterBody2D" parent="."]
+script = ExtResource("2_0wfyh")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player1"]
 
 [node name="Player2" type="CharacterBody2D" parent="."]
+script = ExtResource("2_0wfyh")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player2"]
 
 [node name="ProjectileManager" type="Node2D" parent="."]
+script = ExtResource("5_tbgi4")
 
 [node name="UI" type="CanvasLayer" parent="."]
+
+[node name="TurnIndicator" type="Label" parent="UI"]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("6_tefeu")
+
+[node name="AngleControl" type="HBoxContainer" parent="UI"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("7_o6xl0")
+
+[node name="PowerMeter" type="HBoxContainer" parent="UI"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("8_tipki")
+
+[node name="EmojiSelector" type="HBoxContainer" parent="UI"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("9_85g3d")
 
 [node name="Camera2D" type="Camera2D" parent="."]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcoej6240jusg"
-path="res://.godot/imported/background.png-5df4ef741238e6b81563560dbc198308.ctex"
+uid="uid://ynfauos2fb5e"
+path="res://.godot/imported/wood.png-19b3df085e31b12554d848807f71dbb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/background.png"
-dest_files=["res://.godot/imported/background.png-5df4ef741238e6b81563560dbc198308.ctex"]
+source_file="res://assets/sprites/obstacles/wood.png"
+dest_files=["res://.godot/imported/wood.png-19b3df085e31b12554d848807f71dbb3.ctex"]
 
 [params]
 
